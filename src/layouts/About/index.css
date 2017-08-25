@@ -1,0 +1,16 @@
+@import "styles/variables.css";
+
+.about {
+  background-color: var(--color_about);
+}
+
+.social {
+  margin: auto;
+  margin-top: 20px;
+  width: 150px;
+  display: flex;
+}
+
+.social * + * {
+  margin-left: 10px;
+}

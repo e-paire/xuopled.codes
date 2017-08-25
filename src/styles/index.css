@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Lato";
+  src: url("lato-font/fonts/lato-light/lato-light.eot");
+  src: url("lato-font/fonts/lato-light/lato-light.eot?#iefix") format("embedded-opentype"),
+       url("lato-font/fonts/lato-light/lato-light.woff") format("woff"),
+       url("lato-font/fonts/lato-light/lato-light.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Space mono";
+  src: url("typeface-space-mono/files/space-mono-latin-400.eot");
+  src: url("typeface-space-mono/files/space-mono-latin-400.eot?#iefix") format("embedded-opentype"),
+       url("typeface-space-mono/files/space-mono-latin-400.woff") format("woff"),
+       url("typeface-space-mono/files/space-mono-latin-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Space mono";
+}

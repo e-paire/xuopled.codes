@@ -1,0 +1,44 @@
+homepage:
+  screen:
+    1: Salut,
+    2: Je m'appelle Cédric Delpoux.
+    3: Je suis développeur front-end à Overblog,
+    4: la première plateforme de blogging européenne.
+
+about: >
+  Dès mes premiers pas dans la programmation, j'ai été attiré par tout ce qui touchait de près ou de loin à l'aspect visuel des sites et applications web.
+  À la suite d'une formation plutôt full-stack, je me suis naturellement orienté sur un poste de développeur front-end lors de ma première embauche.
+  J'occupe ce poste chez Overblog, 1ère plateforme de blogging européenne appartenant au groupe Webedia, depuis Septembre 2014.
+  Nous avons finalisé une refonte technique de l'administration des blogs à l'aide de technologies de pointe telles que React et GraphQL.
+
+contact:
+  email: Email
+  your_email: Votre email
+  message: Message
+  your_message: Votre message
+  send: Envoyer
+
+skills:
+  responsive_design:
+    title: Responsive webdesign
+    description: Un site moderne se doit d'être ergonomique quelque soit l'appareil depuis lequel il est consulté
+  web_dev:
+    title: Web development
+    description: Je développe des sites et applications web progressives grâce à des technologies web modernes
+  web_design:
+    title: Web design
+    description: La création de logos et illustrations me permet d'exprimer ma créativité graphique
+  watch:
+    title: Veille technologique
+    description: La veille technologique et graphique me permet d'optimiser mon travail tout en restant curieux et attentif aux évolutions
+  open_source: 
+    title: Open source
+    description: Whithout open-source, front-end dev could be annoying
+
+showcase:
+  websites:
+    boscnegre:
+      title: Bosc Nègre Vacances
+      description: Site du village de vacances du Bosc Nègre, situé dans le Périgord noir.
+  logos:
+    boscnegre:

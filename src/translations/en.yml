@@ -1,0 +1,55 @@
+homepage:
+  screen:
+    1: Hi, I'm Cédric Delpoux and
+    2: I live in Toulouse, in south of France.
+    3: I'm a french front-end developper,
+    4: currently working at Overblog (Webedia group).
+    5: It's an europpean blogging platform.
+    6: Let's naviguate by clicking on links around me !
+
+about: >
+  I choose to be a front-end developer because I love build nice visuals.
+  I 'm currently working at Overblog, first europpean blogging platform .
+  I enjoy make fun with React, GraphQL, CSS and other great front technologies.
+  During my spare time, I like to hike in mountains to capture beautiful landscape with my drone to make movies.  
+  Fell free to contact me if you are curious about me !
+
+contact:
+  email: Email
+  your_email: Your email
+  message: Message
+  your_message: Your message
+  send: Send
+
+skills:
+  responsive_design:
+    title: Responsive webdesign
+    description: UI and UX are very important for a modern website
+  web_dev:
+    title: Web development
+    description: I use trending front-end technologies to build web applications
+  web_design:
+    title: Web design
+    description: I like spending time to create logos or illustrations
+  watch:
+    title: Technology watch
+    description: It is key to keeping up with the latest trends
+  open_source: 
+    title: Open source
+    description: Whithout open-source, front-end dev could be annoying
+
+showcase:
+  websites:
+    boscnegre:
+      title: Bosc Nègre Vacances
+      description: An holiday village, in south of France
+    cedphoto:
+      title: Ced photo
+      description: My personal website showing my photos and videos
+
+nav:
+  home: Home
+  about: About
+  contact: Contact
+  projects: Projects
+  skills: Skills

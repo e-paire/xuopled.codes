@@ -1,0 +1,177 @@
+@import "styles/variables.css";
+@import "styles/mq.css";
+
+:root {
+  --typing-step: 50;
+  --screen-color: #2ecc71;
+  --screen-background: rgba(46, 204, 113, 0.2);
+}
+
+.home {
+  background-color: var(--color_home);
+}
+
+.screen {
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  background: var(--screen-background);
+  border-left: 2px solid var(--screen-color);
+  border-right: 2px solid var(--screen-color);
+}
+
+.textContainer {
+  display: inline-block;
+}
+
+.text {
+  font-family: monospace;
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid transparent;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  color: var(--screen-color);
+  width: 0;
+}
+
+.line:nth-of-type(1) .text {
+  animation: typing 3s steps(var(--typing-step), end) forwards,
+    blink-caret .75s step-end .5s;
+}
+
+.line:nth-of-type(2) .text {
+  animation: typing 4s steps(var(--typing-step), end) forwards,
+    blink-caret .75s step-end 4s;
+  animation-delay: 3s;
+}
+
+.line:nth-of-type(3) .text {
+  animation: typing 4s steps(var(--typing-step), end) forwards,
+    blink-caret .75s step-end 4s;
+  animation-delay: 8s;
+}
+
+.line:nth-of-type(4) .text {
+  animation: typing 4s steps(var(--typing-step), end) forwards,
+    blink-caret .75s step-end 4s;
+  animation-delay: 13s;
+}
+
+.line:nth-of-type(5) .text {
+  animation: typing 4s steps(var(--typing-step), end) forwards,
+    blink-caret .75s step-end 4s;
+  animation-delay: 18s;
+}
+
+.line:nth-of-type(6) .text {
+  animation: typing 4s steps(var(--typing-step), end) forwards,
+    blink-caret .75s step-end 4s;
+  animation-delay: 23s;
+}
+
+.line:nth-of-type(7) .text {
+  animation: typing 4s steps(var(--typing-step), end) forwards,
+    blink-caret .75s step-end 4s;
+  animation-delay: 28s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--screen-color);
+  }
+}
+
+.xuopled {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+}
+
+@media (--mq-s) {
+  .xuopled {
+    width: 100%;
+  }
+
+  .screen {
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+  }
+
+  .text {
+    font-size: 8px;
+  }
+}
+
+@media (--mq-m) {
+  .xuopled {
+    width: 670px;
+  }
+
+  .screen {
+    width: 565px;
+    padding: 20px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+}
+
+@media (--mq-l) {
+  .xuopled {
+    width: 800px;
+  }
+
+  .screen {
+    width: 740px;
+    padding: 20px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media (--mq-xl) {
+  .xuopled {
+    width: 1000px;
+  }
+
+  .screen {
+    width: 1111px;
+    padding: 30px;
+  }
+
+  .text {
+    font-size: 30px;
+  }
+}
+
+@media (--mq-gt-s) {
+  .screen {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

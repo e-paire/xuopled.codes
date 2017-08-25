@@ -1,0 +1,75 @@
+/* slideUp */
+
+.slideUpEnter {
+  transform: translateY(100%);
+}
+
+.slideUpEnter.slideUpEnter_active {
+  transform: translateY(0%);
+}
+
+.slideUpLeave {
+  transform: translateY(0%);
+  transition: transform .7s;
+}
+
+.slideUpLeave.slideUpLeave_active {
+  transform: translateY(-100%);
+}
+
+/* slideDown */
+
+.slideDownEnter {
+  transform: translateY(-100%);
+}
+
+.slideDownEnter.slideDownEnter_active {
+  transform: translateY(0%);
+}
+
+.slideDownLeave {
+  transform: translateY(0%);
+  transition: transform .7s;
+}
+
+.slideDownLeave.slideDownLeave_active {
+  transform: translateY(100%);
+}
+
+/* slideRight */
+
+.slideRightEnter {
+  transform: translateX(-100%);
+}
+
+.slideRightEnter.slideRightEnter_active {
+  transform: translateX(0%);
+}
+
+.slideRightLeave {
+  transform: translateX(0%);
+  transition: transform .7s;
+}
+
+.slideRightLeave.slideRightLeave_active {
+  transform: translateX(100%);
+}
+
+/* slideLeft */
+
+.slideLeftEnter {
+  transform: translateX(100%);
+}
+
+.slideLeftEnter.slideLeftEnter_active {
+  transform: translateX(0%);
+}
+
+.slideLeftLeave {
+  transform: translateX(0%);
+  transition: transform .7s;
+}
+
+.slideLeftLeave.slideLeftLeave_active {
+  transform: translateX(-100%);
+}

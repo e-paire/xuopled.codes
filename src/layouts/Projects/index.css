@@ -1,0 +1,27 @@
+@import "styles/variables.css";
+@import "styles/mq.css";
+
+.projects {
+  background-color: var(--color_projects);
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+* + .title {
+  margin-top: 20px;
+}
+
+.link {
+  color: var(--color_projects);
+  font-size: 30px;
+}
+
+@media (--mq-gt-s) {
+  .logos {
+    display: flex;
+  }
+}

@@ -1,0 +1,26 @@
+@import "styles/mq.css";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (--mq-lt-l) {
+  .page {
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+}
+
+@media (--mq-gt-m) {
+  .page {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    padding: 100px 200px;
+  }
+}

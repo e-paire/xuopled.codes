@@ -1,0 +1,49 @@
+@import "styles/variables.css";
+@import "styles/mq.css";
+
+.contact {
+  background: var(--color_contact);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input,
+.textarea {
+  border: 2px solid var(--color_contact);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.textarea {
+  resize: none;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--color_contact);
+}
+
+.button {
+  border: 2px solid var(--color_contact);
+  background: var(--color_contact);
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.button:focus,
+.button:hover {
+  outline: none;
+  background: var(--color_contact);
+  border-color: var(--color_contact);
+}
+
+@media (--mq-gt-m) {
+  .form {
+    width: 500px;
+  }
+}
