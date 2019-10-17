@@ -1,15 +1,13 @@
 import React from "react"
 import {FormattedMessage} from "react-intl"
-
-import Page from "../../components/Page"
-import Nav from "../../components/Nav"
-import Pattern from "../../components/Pattern"
 import Box from "../../components/Box"
+import Nav from "../../components/Nav"
+import Page from "../../components/Page"
+import Pattern from "../../components/Pattern"
 import Title from "../../components/Title"
-
 import styles from "./index.css"
 
-const Skills = () =>
+const Skills = () => (
   <Page className={styles.skills}>
     <Pattern page="skills" />
     <Nav
@@ -22,6 +20,11 @@ const Skills = () =>
     />
     <Title text="Skills" theme="skills" />
     <Box>
+      <div className={styles.skill}>
+        <a href="https://registry.jsonresume.org/cedricdelpoux">
+          <FormattedMessage id="skills.checkout_resume" />
+        </a>
+      </div>
       <div className={styles.skill}>
         <div className={styles.title}>
           <FormattedMessage id="skills.responsive_design.title" />
@@ -64,5 +67,6 @@ const Skills = () =>
       </div>
     </Box>
   </Page>
+)
 
 export default Skills

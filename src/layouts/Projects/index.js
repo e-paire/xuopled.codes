@@ -1,12 +1,10 @@
 import React from "react"
 import {FormattedMessage} from "react-intl"
-
 import Box from "../../components/Box"
 import Nav from "../../components/Nav"
 import Page from "../../components/Page"
 import Pattern from "../../components/Pattern"
 import Title from "../../components/Title"
-
 import styles from "./index.css"
 
 const websites = [
@@ -16,16 +14,18 @@ const websites = [
 
 const projects = [
   {
-    key: "react-interactive-component",
-    description: "Create interactive demo for your React Component with ease",
+    key: "gatsby-source-google-docs",
+    description: "Gatsby plugin to use Google Docs as a data source",
   },
   {
-    key: "react-demo-page",
-    description: "Build a demo page for your react component with ease",
+    key: "react-google-places-suggest",
+    description:
+      "React component to select geolocated suggestion from Google Maps Places API",
   },
   {
-    key: "react-bank-card",
-    description: "React component to display nice credit bank card",
+    key: "react-google-maps-loader",
+    description:
+      "Simple loader to use google maps services into your react applications",
   },
   {
     key: "react-svg-line-chart",
@@ -41,28 +41,28 @@ const projects = [
 
 const videos = [
   {
+    label: "Travelling Iceland",
+    url: "https://www.youtube.com/watch?v=MiYZJFeAfa0",
+  },
+  {
+    label: "Travelling Peru",
+    url: "https://www.youtube.com/watch?v=vcESp-NkxoI",
+  },
+  {
+    label: "Travelling Indonesia",
+    url: "https://www.youtube.com/watch?v=psGQJSLKBVQ",
+  },
+  {
+    label: "Travelling New Zealand",
+    url: "https://www.youtube.com/watch?v=deOkHldypmk&t=63s",
+  },
+  {
     label: "Tenerife",
-    description: "My trip around Tenerife (Canary Islands, Spain)",
     url: "https://www.youtube.com/watch?v=GjsUcpNCr0M&vl=fr",
-  },
-  {
-    label: "Ars waterfall",
-    description: "One of the largest waterfall in Pyrénées (France)",
-    url: "https://www.youtube.com/watch?v=9X4uqNKdM3Q",
-  },
-  {
-    label: "Oô lake and its waterfall",
-    description: "Lake + waterfall = <3",
-    url: "https://www.youtube.com/watch?v=9_ZwdA9pFvo",
-  },
-  {
-    label: "Araing lake",
-    description: "This frozen lake was amazing to see from the sky",
-    url: "https://www.youtube.com/watch?v=6l599KAC8Q4",
   },
 ]
 
-const Projects = () =>
+const Projects = () => (
   <Page className={styles.projects}>
     <Pattern page="projects" />
     <Nav
@@ -75,48 +75,43 @@ const Projects = () =>
     />
     <Title text="Showcase" theme="projects" />
     <Box>
-      <div className={styles.title}>
-        {"Sites internet"}
+      <div className={styles.box}>
+        <div className={styles.title}>{"Sites internet"}</div>
+        {websites.map((website, i) => (
+          <div key={i} className={styles.project}>
+            <a className={styles.link} href={website.url}>
+              <FormattedMessage id={`showcase.websites.${website.key}.title`} />
+            </a>
+            {": "}
+            <FormattedMessage
+              id={`showcase.websites.${website.key}.description`}
+            />
+          </div>
+        ))}
+        <div className={styles.title}>{"Open source"}</div>
+        {projects.map((project, i) => (
+          <div key={i} className={styles.project}>
+            <a
+              className={styles.link}
+              href={`https://github.com/cedricdelpoux/${project.key}`}
+            >
+              {project.key}
+            </a>
+            {": "}
+            {project.description}
+          </div>
+        ))}
+        <div className={styles.title}>{"Videos"}</div>
+        {videos.map((video, i) => (
+          <div key={i} className={styles.project}>
+            <a className={styles.link} href={video.url}>
+              {video.label}
+            </a>
+          </div>
+        ))}
       </div>
-      {websites.map((website, i) =>
-        <div key={i} className={styles.project}>
-          <a className={styles.link} href={website.url}>
-            <FormattedMessage id={`showcase.websites.${website.key}.title`} />
-          </a>
-          {": "}
-          <FormattedMessage
-            id={`showcase.websites.${website.key}.description`}
-          />
-        </div>
-      )}
-      <div className={styles.title}>
-        {"Open source"}
-      </div>
-      {projects.map((project, i) =>
-        <div key={i} className={styles.project}>
-          <a
-            className={styles.link}
-            href={`https://xuopled.github.io/${project.key}`}
-          >
-            {project.key}
-          </a>
-          {": "}
-          {project.description}
-        </div>
-      )}
-      <div className={styles.title}>
-        {"Videos"}
-      </div>
-      {videos.map((video, i) =>
-        <div key={i} className={styles.project}>
-          <a className={styles.link} href={video.url}>
-            {video.label}
-          </a>
-          {": "}
-          {video.description}
-        </div>
-      )}
     </Box>
   </Page>
+)
 
 export default Projects

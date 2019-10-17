@@ -19,6 +19,7 @@ contact:
   send: Envoyer
 
 skills:
+  checkout_resume: Voir mon CV
   responsive_design:
     title: Responsive webdesign
     description: Un site moderne se doit d'être ergonomique quelque soit l'appareil depuis lequel il est consulté

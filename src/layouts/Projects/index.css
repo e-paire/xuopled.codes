@@ -20,6 +20,13 @@
   font-size: 30px;
 }
 
+@media (--mq-gt-m) {
+  .box {
+    height: calc(100vh - 220px);
+    overflow: scroll;
+  }
+}
+
 @media (--mq-gt-s) {
   .logos {
     display: flex;

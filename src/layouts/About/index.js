@@ -1,19 +1,16 @@
 import React from "react"
 import {FormattedMessage} from "react-intl"
-
 import Box from "../../components/Box"
+import IconGithub from "../../components/IconGithub"
+import IconMail from "../../components/IconMail"
+import IconTwitter from "../../components/IconTwitter"
 import Nav from "../../components/Nav"
 import Page from "../../components/Page"
 import Pattern from "../../components/Pattern"
 import Title from "../../components/Title"
-
-import IconGithub from "../../components/IconGithub"
-import IconTwitter from "../../components/IconTwitter"
-import IconMail from "../../components/IconMail"
-
 import styles from "./index.css"
 
-const About = () =>
+const About = () => (
   <Page className={styles.about}>
     <Pattern page="about" />
     <Nav
@@ -29,21 +26,21 @@ const About = () =>
       <FormattedMessage id="about" />
       <div className={styles.social}>
         <a
-          href="mailto:xuopled@gmail.com"
+          href="mailto:cedric.delpoux@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           <IconMail />
         </a>
         <a
-          href="https://twitter.com/xuopled"
+          href="https://twitter.com/cedricdelpoux"
           target="_blank"
           rel="noopener noreferrer"
         >
           <IconTwitter />
         </a>
         <a
-          href="https://github.com/xuopled"
+          href="https://github.com/cedricdelpoux"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -52,5 +49,6 @@ const About = () =>
       </div>
     </Box>
   </Page>
+)
 
 export default About

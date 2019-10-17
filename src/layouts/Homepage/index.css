@@ -28,52 +28,52 @@
   font-family: monospace;
   display: inline-block;
   overflow: hidden;
-  border-right: .15em solid transparent;
+  border-right: 0.15em solid transparent;
   white-space: nowrap;
   margin: 0 auto;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
   color: var(--screen-color);
   width: 0;
 }
 
 .line:nth-of-type(1) .text {
   animation: typing 3s steps(var(--typing-step), end) forwards,
-    blink-caret .75s step-end .5s;
+    blink-caret 0.75s step-end 0.5s;
 }
 
 .line:nth-of-type(2) .text {
   animation: typing 4s steps(var(--typing-step), end) forwards,
-    blink-caret .75s step-end 4s;
+    blink-caret 0.75s step-end 4s;
   animation-delay: 3s;
 }
 
 .line:nth-of-type(3) .text {
   animation: typing 4s steps(var(--typing-step), end) forwards,
-    blink-caret .75s step-end 4s;
+    blink-caret 0.75s step-end 4s;
   animation-delay: 8s;
 }
 
 .line:nth-of-type(4) .text {
   animation: typing 4s steps(var(--typing-step), end) forwards,
-    blink-caret .75s step-end 4s;
+    blink-caret 0.75s step-end 4s;
   animation-delay: 13s;
 }
 
 .line:nth-of-type(5) .text {
   animation: typing 4s steps(var(--typing-step), end) forwards,
-    blink-caret .75s step-end 4s;
+    blink-caret 0.75s step-end 4s;
   animation-delay: 18s;
 }
 
 .line:nth-of-type(6) .text {
   animation: typing 4s steps(var(--typing-step), end) forwards,
-    blink-caret .75s step-end 4s;
+    blink-caret 0.75s step-end 4s;
   animation-delay: 23s;
 }
 
 .line:nth-of-type(7) .text {
   animation: typing 4s steps(var(--typing-step), end) forwards,
-    blink-caret .75s step-end 4s;
+    blink-caret 0.75s step-end 4s;
   animation-delay: 28s;
 }
 
@@ -101,13 +101,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 700px;
+  height: calc(100vh - 150px);
+  width: 100vw;
 }
 
 @media (--mq-s) {
-  .xuopled {
+  /* .xuopled {
     width: 100%;
-  }
+  } */
 
   .screen {
     left: 10px;
@@ -124,9 +125,9 @@
 }
 
 @media (--mq-m) {
-  .xuopled {
+  /* .xuopled {
     width: 670px;
-  }
+  } */
 
   .screen {
     width: 565px;
@@ -139,9 +140,9 @@
 }
 
 @media (--mq-l) {
-  .xuopled {
+  /* .xuopled {
     width: 800px;
-  }
+  } */
 
   .screen {
     width: 740px;
@@ -154,9 +155,9 @@
 }
 
 @media (--mq-xl) {
-  .xuopled {
-    width: 1000px;
-  }
+  /* .xuopled {
+    height: 80%;
+  } */
 
   .screen {
     width: 1111px;
